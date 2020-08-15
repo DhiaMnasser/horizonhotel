@@ -1,0 +1,16 @@
+@import '~@angular/material/theming';
+
+@mixin sidenav-list-component-theme ($horizonhotel){
+
+  $primary : map-get($horizonhotel, primary );
+  $accent : map-get($horizonhotel, accent );
+
+  .mat-list-option:hover,
+  .mat-list-option:focus,
+  .mat-nav-list .mat-list-item:hover,
+  .mat-nav-list .mat-list-item:focus,
+  .mat-action-list .mat-list-item:hover,
+  .mat-action-list .mat-list-item:focus {
+    background-color: mat-color($horizonhotel-primary, 100);
+  }
+}

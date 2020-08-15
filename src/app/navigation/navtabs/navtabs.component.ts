@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavtabsComponent implements OnInit {
 
+  activeLink = 'home';
   constructor() { }
 
   ngOnInit(): void {

@@ -1,0 +1,23 @@
+.container {
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(107, 107, 107, 0.445), rgba(107, 107, 107, 0.226)), url(/assets/images/beach4.png) no-repeat ;
+  background-size:cover;
+}
+
+.book-now-container {
+  padding: 35px 115px;
+}
+
+.book-now-btn {
+  width: 170px;
+  color: white;
+  border: 1px solid white;
+  text-transform: uppercase;
+}
+
+.header-container {
+  height: 50vh;
+}
+
+
+

@@ -1,0 +1,17 @@
+@import '~@angular/material/theming';
+
+@mixin navtabs-component-theme ($horizonhotel){
+
+  $primary : map-get($horizonhotel, primary );
+  $accent : map-get($horizonhotel, accent );
+
+
+  // put the theming styles here
+  .navtabs-container {
+    background-color: mat-color($horizonhotel-accent);
+  }
+
+};
+
+
+
