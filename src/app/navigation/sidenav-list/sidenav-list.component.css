@@ -2,3 +2,6 @@
   padding-left: 8px;
 }
 
+.mat-list-base .mat-list-item {
+  font-size: inherit;
+}

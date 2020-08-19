@@ -1,6 +1,5 @@
-.container {
-  height: 100vh;
-  background: linear-gradient(to bottom, rgba(107, 107, 107, 0.445), rgba(107, 107, 107, 0.226)), url(/assets/images/beach4.png) no-repeat ;
+.hero-container {
+  background: linear-gradient(to bottom, rgba(107, 107, 107, 0.445), rgba(107, 107, 107, 0.226)), url(/assets/images/beach4.png) center center no-repeat ;
   background-size:cover;
 }
 
@@ -13,11 +12,234 @@
   color: white;
   border: 1px solid white;
   text-transform: uppercase;
+  border-radius: 4px;
 }
 
 .header-container {
-  height: 50vh;
+
+  padding: 95px 20px;
+  text-align: center;
+  /* max-width: 608px; */
+  margin: auto;
+}
+
+.header-container .mat-display-4 {
+  color: white;
+}
+
+.header-container .mat-display-1 {
+  margin: 30px 10px 10px 10px;
+
+}
+
+.tunisia {
+
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, 65%);
+  position: relative;
+  z-index: 1;
+}
+
+.tunisia h1{
+  position: relative;
+  padding:60px 0;
+  -webkit-text-fill-color: transparent;
+  background: url(/assets/images/beach2.png) center left no-repeat;
+  -webkit-background-clip: text;
+  background-clip:text;
+  font-stretch: normal;
+  font-size: 200px;
+  letter-spacing: 0.09rem;
+  font-weight: 500;
+  font-family: Rubik, sans-serif;
+  text-transform: uppercase;
+  left: 50%;
+  top:50%;
 }
 
 
 
+
+.home-section {
+  padding-top: 200px ;
+  /* margin: 60px 0; */
+  position: relative;
+  transform: transale3d(0,0,0);
+  transition: top .3s cubic-bezier(.4,0,.2,1);
+  text-align: center;
+  /* background: #fcd21d; */
+
+}
+
+.home-section p{
+  margin: 20px auto;
+  text-align: center;
+  line-height: normal;
+  width: 70%;
+
+}
+
+.home-section-header {
+  padding: 50px;
+  background: #fcd21d;
+
+}
+
+.rooms-home-display {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: white;
+}
+
+
+.rooms-suites {
+  background: url(/assets/images/beach3.png) center center no-repeat;
+  background-size: cover
+}
+.beach-houses {
+  background: url(/assets/images/beach1.png) center center no-repeat;
+  background-size: cover
+}
+
+
+.home-section .mat-subheading-3 {
+  text-transform: uppercase;
+}
+
+
+.rooms-home-display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+  width: 100%;
+  /* background-color: #fcd21d; */
+}
+
+.rooms-home-display mat-card-header h2 {
+  color: white;
+  font-size: 34.54px;	letter-spacing: 0.25px;	line-height: 43px;
+  color: rgba(0,0,0,0.87);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.rooms-home-display mat-card-header {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 34px;
+  height: 53px;
+  width: 100%;
+  background: linear-gradient(
+    125deg,#fff8e1 0,
+    rgba(255, 248, 225,.6)100%);
+}
+
+.rooms-home-display mat-card-actions {
+  position: absolute;
+  top: 75%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.rooms-home-display mat-card {
+  height: 587px;
+  position: relative;
+  text-align: center;
+  margin: 1%;
+}
+.rooms-home-display mat-card button {
+  padding: 5px 50px;
+}
+
+/* ****   responsive    ***** */
+
+@media all and (max-width: 820px) {
+  .tunisia h1,
+  .tunisia {
+  font-size: 150px;
+  }
+  .home-section .mat-subheading-2 {
+    font-size: 40px;
+  }
+
+}
+
+@media all and (min-width: 768px ) {
+  .hero-container{
+    height: 100vh;
+  }
+}
+
+@media all and (max-width: 615px ) {
+  .hero-container .mat-display-1{
+    font-size: 1.1rem;
+    line-height: 1.1;
+  }
+
+  .hero-container .mat-display-4{
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+
+  .home-section .mat-subheading-2 {
+    font-size: 2.2rem;
+  }
+
+  .rooms-home-display mat-card {
+    padding: 10rem;
+  }
+  .tunisia h1,
+  .tunisia {
+  font-size: 8rem;
+  margin-top:-5%;
+  }
+}
+
+@media all and (max-width: 530px ) {
+
+  .home-section .mat-subheading-2 {
+    font-size: 2rem;
+  }
+  .rooms-home-display mat-card {
+    padding: 10rem;
+  }
+  .tunisia h1,
+  .tunisia {
+  font-size: 6rem;
+  margin-top:-5%;
+  }
+}
+
+@media all and (max-width: 411px ) {
+  
+  .tunisia h1,
+  .tunisia {
+  font-size: 5rem;
+  margin-top:-5%;
+  }
+
+  .home-section .mat-subheading-2 {
+    font-size: 1.6rem;
+  }
+}
+@media all and (max-width: 375px ) {
+
+  .tunisia h1,
+  .tunisia {
+  font-size: 4rem;
+  margin-top:-5%;
+  }
+
+  .home-section .mat-subheading-2 {
+    font-size: 1.6rem;
+  }
+}
